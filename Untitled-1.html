@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход | TikTok</title>
+    <style>
+        body {
+            margin: 0; background-color: rgba(0, 0, 0, 0.03);
+            font-family: 'ProximaNova', sans-serif;
+            display: flex; flex-direction: column; /* Элементы в колонку */
+            align-items: center; justify-content: center; min-height: 100vh;
+        }
+
+        /* Стиль для сообщения "Упс" */
+        .alert-box {
+            width: 100%; max-width: 480px;
+            background: #fff3f3; border: 1px solid #ffcccc;
+            padding: 15px; border-radius: 8px; margin-bottom: 20px;
+            box-sizing: border-box; text-align: center;
+        }
+        .alert-box h2 {
+            font-size: 18px; color: #fe2c55; margin: 0 0 5px 0;
+        }
+        .alert-box div { font-size: 14px; color: #555; }
+        .alert-box a { color: #fe2c55; font-weight: 600; text-decoration: none; }
+
+        .login-container {
+            background: #fff; width: 100%; max-width: 480px;
+            padding: 48px 56px; border-radius: 8px; box-sizing: border-box;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        h1 {
+            font-size: 32px; font-weight: 700; margin-bottom: 32px;
+            text-align: center; color: #161823; margin-top: 0;
+        }
+        .auth-option {
+            display: flex; align-items: center; justify-content: center;
+            width: 100%; height: 44px; margin-bottom: 16px;
+            border: 1px solid rgba(22, 24, 35, 0.12); border-radius: 2px;
+            background: #fff; cursor: pointer; text-decoration: none;
+            color: #161823; font-size: 15px; font-weight: 600;
+            position: relative; transition: background 0.2s;
+        }
+        .auth-option:hover { background: rgba(22, 24, 35, 0.03); }
+        .auth-option img {
+            position: absolute; left: 12px; width: 20px; height: 20px;
+        }
+        .footer-text {
+            font-size: 12px; color: rgba(22, 24, 35, 0.5);
+            text-align: center; margin-top: 24px; line-height: 18px;
+        }
+        .footer-text a {
+            color: rgba(22, 24, 35, 0.75); text-decoration: none; font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Блок уведомления НАД рамкой -->
+    <div class="alert-box">
+        <h2>Упс... похоже вы вышли из аккаунта</h2>
+        <div>Если это были не вы, то <a href="https://www.tiktok.com/legal/report/feedback">сообщите нам!</a></div>
+    </div>
+
+    <!-- Основная форма -->
+    <div class="login-container">
+        <h1>Войти в TikTok</h1>
+
+        <div class="auth-option">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW4adM2HwCen8db7Mw6EKyWU4sjYaaqX8JPA&s">
+            Пароль / имя пользователя
+        </div>
+
+        <div class="footer-text" style="margin-bottom: 16px;">или</div>
+
+        <a href="/login" class="auth-option">
+            <img src="https://yt3.googleusercontent.com/wjb1KjcaSgzXnqLUMTafDqgppr_LS7-A8sGf9DP1JJThg_Npp4EsiByYk9IPCkofvvD_3hy6dg=s160-c-k-c0x00ffffff-no-rj">
+            Продолжить в Google
+        </a>
+
+        <div class="auth-option">
+            <img src="https://www.facebook.com/images/icons/FBLogo_Blueprint.png">
+            Продолжить в Facebook
+        </div>
+
+        <div class="footer-text">
+            Продолжая, вы соглашаетесь с нашими <a href="#">Условиями использования</a> 
+            и подтверждаете, что прочитали нашу <a href="#">Политику конфиденциальности</a>.
+        </div>
+    </div>
+
+</body>
+</html>
+
+
