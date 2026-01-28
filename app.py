@@ -16,8 +16,4 @@ def index():
 
 if __name__ == '__main__':
     print("Сервер запущен! Перейди по адресу: http://0.0.0.0:8000")
-    app.run(port=5000)
-
-
-
-
+    app.run(port=8000)
